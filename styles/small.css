@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  header img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  header span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #007acc;
+  }
+  
+  nav {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .nav-toggle {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-toggle:hover {
+    background-color: #005fa3;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+  }
+  
+  nav ul li {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007acc;
+    padding: 0.75rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #e0f0ff;
+    color: #005fa3;
+  }
+  
+  main {
+    padding: 1rem 0;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .course-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #007acc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card.completed {
+    border-left-color: #28a745;
+    background-color: #e7f8e7;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+  }
+  
