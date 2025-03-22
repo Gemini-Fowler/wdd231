@@ -11,11 +11,10 @@
     <meta property="og:image" content="images/preview.jpg">
     <meta property="og:url" content="https://yourwebsite.com/directory.html">
 
-    <title>Chamber of Commerce Directory</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="script/script.js">
+    <title>Directory | Chamber of Commerce</title>
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="data/members.json">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -23,11 +22,16 @@
         <h1>Chamber of Commerce</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
         </nav>
     </header>
+
+    <main class="container">
+        <h2>Welcome to Our Business Community</h2>
+        <p>We support local businesses and help our community grow!</p>
+    </main>
 
     <main class="container">
         <h2>Business Directory</h2>
@@ -38,9 +42,14 @@
         <div id="directory" class="grid-view"></div>
     </main>
 
+    <section class="spotlights">
+        <h3>Featured Businesses</h3>
+        <div class="spotlight-container"></div>
+    </section>
+    
     <footer>
-        <p>&copy; <span id="year"></span> Chamber of Commerce. All rights reserved.</p>
-        <p>WDD 231 | Last Updated: <span id="lastModified"></span></p>
+        <p>&copy; <span id="year"></span> Chamber of Commerce | Jonas Crothers | WDD 231</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
     <script src="js/script.js"></script>

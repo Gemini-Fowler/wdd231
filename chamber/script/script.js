@@ -1,44 +1,90 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", () => {
+    const membersContainer = document.getElementById("directory");
+    const weatherSection = document.querySelector(".weather");
+    const spotlightsSection = document.querySelector(".spotlight-container");
+    const API_KEY = "add698cf907a2f2be2d41cc50acd670d";
+    const LAT = "16.7666";
+    const LON = "-3.0026";
 
-async function fetchBusinessData() {
-    try {
-        const response = await fetch('data/members.json');
-        const businesses = await response.json();
-        displayBusinesses(businesses);
-    } catch (error) {
-        console.error("Error fetching business data:", error);
+    function getWeather() {
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&units=imperial&appid=${API_KEY}`;
+        
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (!data || !data.list || data.list.length === 0) {
+                    weatherSection.innerHTML = `<h3>Weather Data Unavailable</h3>`;
+                    return;
+                }
+
+                const currentTemp = Math.round(data.list[0].main.temp);
+                const currentDescription = data.list[0].weather[0].description;
+
+                let forecastHtml = `<h3>Weather</h3>
+                    <p>Current: ${currentTemp}°F - ${currentDescription}</p>
+                    <h4>3-Day Forecast:</h4>`;
+
+                const forecastDays = {};
+                data.list.forEach(entry => {
+                    const date = new Date(entry.dt_txt).toDateString();
+                    if (!forecastDays[date] && entry.dt_txt.includes("12:00:00")) {
+                        forecastDays[date] = entry;
+                    }
+                });
+
+                Object.values(forecastDays).slice(0, 3).forEach((dayData, index) => {
+                    let temp = Math.round(dayData.main.temp);
+                    let desc = dayData.weather[0].description;
+                    forecastHtml += `<p>Day ${index + 1}: ${temp}°F - ${desc}</p>`;
+                });
+
+                weatherSection.innerHTML = forecastHtml;
+            })
+            .catch(error => console.error("Error fetching weather data:", error));
     }
-}
 
-function displayBusinesses(businesses) {
-    const directory = document.getElementById("directory");
-    directory.innerHTML = ""; 
+    function displayMembers(members) {
+        membersContainer.innerHTML = "";
+        members.forEach(member => {
+            const memberElement = document.createElement("div");
+            memberElement.classList.add("member");
+            memberElement.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name}">
+                <h2>${member.name}</h2>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            `;
+            membersContainer.appendChild(memberElement);
+        });
+    }
+    
+    function displaySpotlights(members) {
+        const eligibleMembers = members.filter(m => m.membership >= 2);
+        const selected = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-    businesses.forEach(business => {
-        const card = document.createElement("div");
-        card.classList.add("business-card");
+        spotlightsSection.innerHTML = "";
+        selected.forEach(member => {
+            spotlightsSection.innerHTML += `
+                <div class="spotlight">
+                    <img src="images/${member.image}" alt="${member.name}">
+                    <h4>${member.name}</h4>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">Visit</a>
+                </div>`;
+        });
+    }
 
-        card.innerHTML = `
-            <img src="images/${business.image}" alt="${business.name}">
-            <h3>${business.name}</h3>
-            <p><strong>Address:</strong> ${business.address}</p>
-            <p><strong>Phone:</strong> ${business.phone}</p>
-            <a href="${business.website}" target="_blank">Visit Website</a>
-        `;
+    fetch("data/members.json")
+        .then(response => response.json())
+        .then(data => {
+            displayMembers(data);
+            displaySpotlights(data);
+        })
+        .catch(error => console.error("Error loading members:", error));
 
-        directory.appendChild(card);
-    });
-}
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
 
-document.getElementById("grid-view").addEventListener("click", () => {
-    document.getElementById("directory").classList.remove("list-view");
-    document.getElementById("directory").classList.add("grid-view");
+    getWeather();
 });
-
-document.getElementById("list-view").addEventListener("click", () => {
-    document.getElementById("directory").classList.remove("grid-view");
-    document.getElementById("directory").classList.add("list-view");
-});
-
-fetchBusinessData();
