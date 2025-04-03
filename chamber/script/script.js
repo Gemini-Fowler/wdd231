@@ -88,3 +88,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getWeather();
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById("timestamp").value = new Date().toISOString();
+
+const memberships = [
+    { id: 'np', title: 'NP Membership', description: 'Non-profit organizations can join for free and access networking opportunities.' },
+    { id: 'bronze', title: 'Bronze Membership', description: 'Includes event discounts and basic promotional features.' },
+    { id: 'silver', title: 'Silver Membership', description: 'Includes training sessions, enhanced promotion, and VIP networking events.' },
+    { id: 'gold', title: 'Gold Membership', description: 'All benefits included, with premium advertising and exclusive invitations.' }
+];
+
+const cardContainer = document.querySelector('.membership-cards');
+cardContainer.innerHTML = memberships.map(m => `
+    <div class="card">
+        <h3>${m.title}</h3>
+        <a href="#" onclick="openModal('${m.id}-modal')">Learn More</a>
+    </div>
+`).join('');
+
+const modalContainer = document.createElement('div');
+modalContainer.innerHTML = memberships.map(m => `
+    <div id="${m.id}-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>${m.title}</h2>
+            <p>${m.description}</p>
+        </div>
+    </div>
+`).join('');
+document.body.appendChild(modalContainer);
+
+document.querySelectorAll('.close').forEach(button => {
+    button.addEventListener('click', () => {
+        button.parentElement.parentElement.style.display = "none";
+    });
+});
+
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+}

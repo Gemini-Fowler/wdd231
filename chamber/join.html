@@ -21,25 +21,50 @@
 
     <main class="container">
         <h2>Become a Member</h2>
-        <form>
-            <label for="business-name">Business Name:</label>
-            <input type="text" id="business-name" name="business-name" required>
+        <form action="thankyou.html" method="get">
+            <label>First Name:
+                <input type="text" name="first-name" autocomplete="given-name" title="Enter your first name" required>
+            </label>
 
-            <label for="contact-name">Contact Name:</label>
-            <input type="text" id="contact-name" name="contact-name" required>
+            <label>Last Name:
+                <input type="text" name="last-name" autocomplete="family-name" title="Enter your last name" required>
+            </label>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label>Organizational Title:
+                <input type="text" name="organization-title" autocomplete="organization-title" title="Enter your title within the organization" pattern="[A-Za-z\s\-]{7,}">
+            </label>
 
-            <label for="membership-level">Membership Level:</label>
-            <select id="membership-level" name="membership-level">
-                <option value="1">Member</option>
-                <option value="2">Silver</option>
-                <option value="3">Gold</option>
-            </select>
+            <label>Email:
+                <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address" required>
+            </label>
 
-            <button type="submit">Join Now</button>
+            <label>Mobile Phone:
+                <input type="tel" name="phone" autocomplete="tel" title="Enter your mobile phone number" required>
+            </label>
+
+            <label>Business Name:
+                <input type="text" name="business-name" autocomplete="organization" title="Enter your business name" required>
+            </label>
+
+            <label>Membership Level:
+                <select name="membership-level" title="Select a membership level" required>
+                    <option value="np">NP Membership (Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>Business Description:
+                <textarea name="business-description" title="Describe your business"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Join Now">
         </form>
+
+        <div class="membership-cards"></div>
     </main>
 
     <footer>
