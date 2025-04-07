@@ -1,0 +1,44 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #191970; 
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  a {
+    color: #FFD700; 
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+  }
+  

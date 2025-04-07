@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Thank You for Joining!</h2>
+        <p>Your membership details:</p>
+        <div id="form-details"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("form-details").innerHTML = `
+            <p><strong>First Name:</strong> ${params.get("first-name")}</p>
+            <p><strong>Last Name:</strong> ${params.get("last-name")}</p>
+            <p><strong>Email:</strong> ${params.get("email")}</p>
+            <p><strong>Phone:</strong> ${params.get("phone")}</p>
+            <p><strong>Business Name:</strong> ${params.get("business-name")}</p>
+            <p><strong>Submitted On:</strong> ${params.get("timestamp")}</p>
+        `;
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Sunset Coffee Roasters",
+        "address": "123 Main Street, Timbuktu",
+        "phone": "(555) 123-4567",
+        "website": "https://sunsetcoffee.com",
+        "image": "coffee-shop.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Mountain View Inn",
+        "address": "456 Hilltop Rd, Timbuktu",
+        "phone": "(555) 987-6543",
+        "website": "https://mountainviewinn.com",
+        "image": "hotel.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Tech Haven",
+        "address": "789 Silicon Ave, Timbuktu",
+        "phone": "(555) 654-3210",
+        "website": "https://techhaven.com",
+        "image": "tech-store.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Garden Bistro",
+        "address": "101 Blossom Lane, Timbuktu",
+        "phone": "(555) 234-5678",
+        "website": "https://gardenbistro.com",
+        "image": "bistro.jpg",
+        "membership": 2
+    },
+    {
+        "name": "The Book Nook",
+        "address": "202 Library Ave, Timbuktu",
+        "phone": "(555) 345-6789",
+        "website": "https://thebooknook.com",
+        "image": "bookstore.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Fitness First",
+        "address": "303 Healthy St, Timbuktu",
+        "phone": "(555) 456-7890",
+        "website": "https://fitnessfirst.com",
+        "image": "gym.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Zen Spa",
+        "address": "404 Relax Rd, Timbuktu",
+        "phone": "(555) 567-8901",
+        "website": "https://zenspa.com",
+        "image": "spa.jpg",
+        "membership": 3
+    }
+]

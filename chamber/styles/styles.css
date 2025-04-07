@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+header {
+    background: #004d99;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background: white;
+    color: #004d99;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather,
+.spotlights {
+    background: #eef4ff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.spotlight {
+    width: 30%;
+    min-width: 200px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.spotlight img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.spotlight:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #004d99;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
