@@ -6,9 +6,12 @@
     <meta name="description" content="Discover the city and businesses of our Chamber of Commerce.">
     <meta name="author" content="Jonas Crothers">
     <title>Discover | Chamber of Commerce</title>
-    <script src="js/discover.js" defer></script>
+    
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/medium.css">
+    
+    <script src="script/discover.js" defer></script>
+    
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -30,7 +33,7 @@
         </section>
 
         <section class="gallery">
-            <h2>Explore Our City</h2>
+            <h2>Explore Moscow City</h2>
             <p>Learn about the history, culture, and attractions in our area.</p>
             <div class="card-container" id="discover-cards"></div>
         </section>
@@ -40,6 +43,11 @@
         <p>&copy; <span id="year"></span> Chamber of Commerce | Jonas Crothers | WDD 231</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 
 </body>
 </html>

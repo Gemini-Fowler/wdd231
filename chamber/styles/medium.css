@@ -1,0 +1,16 @@
+@media (min-width: 641px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "sidebar gallery";
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

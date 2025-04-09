@@ -1,0 +1,58 @@
+[
+    {
+        "name": "University of Idaho Arboretum & Botanical Garden",
+        "address": "1200 W Palouse River Dr, Moscow, ID 83843",
+        "description": "A beautiful park in the heart of the city with walking trails and gardens.",
+        "image": "images/Arboretum.jpg",
+        "link": "https://example.com/downtown-park"
+    },
+    {
+        "name": "Appaloosa Museum and Heritage Center",
+        "address": "2720 W Pullman Rd, Moscow, ID",
+        "description": "Explore the rich history of Moscow at this engaging museum.",
+        "image": "images/museum.jpg",
+        "link": "https://example.com/historic-museum"
+    },
+    {
+        "name": "Moscow Public Library",
+        "address": "110 S Jefferson St, Moscow, ID",
+        "description": "A quiet place to read, research, and attend community events.",
+        "image": "images/library.jpg",
+        "link": "https://example.com/city-library"
+    },
+    {
+        "name": "Moscow Farmers Market",
+        "address": "206 E 3rd St, Friendship Sq, Moscow, ID",
+        "description": "Fresh produce, local crafts, and live entertainment every weekend.",
+        "image": "images/market.jpg",
+        "link": "https://example.com/farmers-market"
+    },
+    {
+        "name": "University of Idaho",
+        "address": "102 Campus Dr, Moscow, ID",
+        "description": "Home to diverse academic programs and vibrant student life.",
+        "image": "images/UofI.jpg",
+        "link": "https://www.uidaho.edu"
+    },
+    {
+        "name": "Essential Art Gallery & Fine Gifts",
+        "address": "203 S Main St, Moscow, ID ",
+        "description": "A contemporary gallery featuring local and international artists.",
+        "image": "images/art.jpg",
+        "link": "https://example.com/art-gallery"
+    },
+    {
+        "name": "Village Centre Cinemas at Eastside",
+        "address": "1420 S Blaine St, Moscow, ID",
+        "description": "Watch live performances and classic movies in a historic setting.",
+        "image": "images/movie.jpg",
+        "link": "https://example.com/local-theater"
+    },
+    {
+        "name": "Latah Trail Bike Path",
+        "address": "338 Styner Ave, Moscow, ID ",
+        "description": "Scenic hiking and biking trails along the river.",
+        "image": "images/trail.jpg",
+        "link": "https://example.com/riverside-trail"
+    }
+]
