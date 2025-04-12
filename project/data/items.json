@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "title": "Island of the Lotus‑Eaters",
+      "description": "Odysseus’ crew eats the lotus plant and forgets their homes.",
+      "details": "Odysseus must drag them back to the ships to continue the journey.",
+      "image": "images/lotus.jpg",
+      "link": "https://en.wikipedia.org/wiki/Lotus-eaters"
+    },
+    {
+      "id": 2,
+      "title": "Cyclops’ Cave",
+      "description": "Odysseus blinds Polyphemus to escape captivity.",
+      "details": "By telling the Cyclops his name is 'Nobody', Odysseus and his men slip away under the sheep.",
+      "image": "images/Polyphemus.jpg",
+      "link": "https://en.wikipedia.org/wiki/Polyphemus"
+    },
+    {
+      "id": 3,
+      "title": "Aeolus’ Bag of Winds",
+      "description": "Aeolus gives Odysseus a bag containing all the winds.",
+      "details": "Odysseus' crew opens it prematurely, blowing them off course.",
+      "image": "images/aeolus.jpg",
+      "link": "https://en.wikipedia.org/wiki/Aeolus"
+    },
+    {
+      "id": 4,
+      "title": "Laestrygonian Giants",
+      "description": "Odysseus encounters the cannibalistic Laestrygonians.",
+      "details": "They destroy all ships except Odysseus’, devouring many men.",
+      "image": "images/laestrygonians.jpg",
+      "link": "https://en.wikipedia.org/wiki/Laestrygonians"
+    },
+    {
+      "id": 5,
+      "title": "Circe’s Island",
+      "description": "Circe turns Odysseus’ men into pigs.",
+      "details": "Hermes gives Odysseus a herb to resist her magic; she then aids them.",
+      "image": "images/circe.jpg",
+      "link": "https://en.wikipedia.org/wiki/Circe"
+    },
+    {
+      "id": 6,
+      "title": "The Underworld",
+      "description": "Odysseus visits the Underworld and speaks with the prophet Tiresias.",
+      "details": "He learns how to appease Poseidon and hears from fallen heroes.",
+      "image": "images/underworld.jpg",
+      "link": "https://en.wikipedia.org/wiki/Tiresias"
+    },
+    {
+      "id": 7,
+      "title": "The Sirens",
+      "description": "Odysseus sails past the Sirens whose song lures sailors to their doom.",
+      "details": "He plugs his crew’s ears with beeswax and has himself tied to the mast.",
+      "image": "images/sirens.jpg",
+      "link": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+    },
+    {
+      "id": 8,
+      "title": "Scylla and Charybdis",
+      "description": "Odysseus navigates between Scylla and Charybdis.",
+      "details": "He loses six men to Scylla rather than risk the whirlpool.",
+      "image": "images/scylla-charybdis.png",
+      "link": "https://en.wikipedia.org/wiki/Scylla_and_Charybdis"
+    },
+    {
+      "id": 9,
+      "title": "Cattle of the Sun",
+      "description": "Despite warnings, the crew slaughters Helios’ sacred cattle.",
+      "details": "Zeus punishes them with a storm, leaving Odysseus alone.",
+      "image": "images/cattle-of-sun.jpg",
+      "link": "https://en.wikipedia.org/wiki/Helios"
+    },
+    {
+      "id": 10,
+      "title": "Calypso’s Island",
+      "description": "Calypso holds Odysseus captive on Ogygia for seven years.",
+      "details": "She offers him immortality; Hermes orders her to release him.",
+      "image": "images/calypso.jpg",
+      "link": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+    },
+    {
+      "id": 11,
+      "title": "Nausicaa’s Beach",
+      "description": "Nausicaa discovers Odysseus washed ashore and brings him to the Phaeacians.",
+      "details": "Her kindness leads to Odysseus receiving help to return home.",
+      "image": "images/nausicaa.webp",
+      "link": "https://en.wikipedia.org/wiki/Nausicaa"
+    },
+    {
+      "id": 12,
+      "title": "Phaeacian Court",
+      "description": "Odysseus is welcomed at King Alcinous’ court in Phaeacia.",
+      "details": "He remains anonymous while feasting and listening to songs of Troy.",
+      "image": "images/phaeacian-court.jpg",
+      "link": "https://en.wikipedia.org/wiki/Phaeacia"
+    },
+    {
+      "id": 13,
+      "title": "Phaeacian Court",
+      "description": "Odysseus competes in athletic games held by the Phaeacians.",
+      "details": "After winning, he is moved to tears by a bard’s song of the Trojan War.",
+      "image": "images/phaeacian-games.jpg",
+      "link": "https://en.wikipedia.org/wiki/Phaeacia#Games"
+    },
+    {
+      "id": 14,
+      "title": "Disguise in Ithaca",
+      "description": "Back in Ithaca, Odysseus disguises himself as a beggar.",
+      "details": "Athena transforms him; he assesses the suitors and plans his revenge.",
+      "image": "images/disguise.png",
+      "link": "https://en.wikipedia.org/wiki/The_Odyssey#Return_to_Ithaca"
+    },
+    {
+      "id": 15,
+      "title": "Final Vengeance and Reunion",
+      "description": "Odysseus reveals himself, slaughters the suitors, and reunites with Penelope.",
+      "details": "Peace is restored through Athena’s intervention.",
+      "image": "images/reunion.png",
+      "link": "https://en.wikipedia.org/wiki/The_Odyssey#Slaying_of_the_suitors"
+    }
+  ]
+  
