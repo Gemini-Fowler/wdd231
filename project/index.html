@@ -14,14 +14,23 @@
     <h1>Odyssey Unbound</h1>
     <nav>
       <ul>
-        <li><a href="index.html" aria-current="page">Story Summaries</a></li>
+        <li><a href="index.html">Story Summaries</a></li>
         <li><a href="characters.html">Character Bios</a></li>
         <li><a href="context.html">History and Culture</a></li>
       </ul>
     </nav>
   </header>
   
-  <main class="container">
+  <div id="itemsContainer"></div>
+
+  <dialog id="itemModal" aria-labelledby="modalTitle">
+    <div id="modalContent"></div>
+    <button id="closeModal">Close</button>
+  </dialog>
+  
+  <script type="module" src="scripts/main.js"></script>  
+
+  <div class="container">
     <div class="odyssey-summary">
       <h2>The Odyssey: Chapter-by-Chapter Breakdown</h2>
   
@@ -127,18 +136,10 @@
           <p><strong>Themes:</strong> Justice, homecoming, reconciliation.</p>
       </div>
     </div>
-    
-    <div id="itemsContainer"></div>
-    <dialog id="itemModal">
-      <div id="modalContent"></div>
-      <button id="closeModal">Close</button>
-    </dialog>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Odyssey Unbound. All rights reserved.</p>
-  </footer>
+  </div>
   
-  <script type="module" src="scripts/main.js"></script>
+  <footer>
+    <p>© 2025 Odyssey Unbound. All rights reserved.</p>
+  </footer>
 </body>
 </html>

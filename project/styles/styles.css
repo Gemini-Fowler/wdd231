@@ -7,27 +7,24 @@ body {
 }
 
 header, footer {
-  background-color: #191970; 
+  background-color: #191970;
   color: #FFD700;
   padding: 20px;
   text-align: center;
 }
 
 a {
-  color: #FFD700; 
+  color: #FFD700;
   text-decoration: none;
 }
 
-.container,
-.content,
-.odyssey-characters {
+.container {
   width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
-  background-color: #bed9f5; 
-  border: 3px solid #191970; 
+  margin: 0 auto;
+  background-color: #bed9f5;
+  border: 3px solid #191970;
   padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,37 +41,64 @@ nav li {
   nav ul {
     display: flex;
     justify-content: center;
-    padding: 0;
   }
   nav li {
     margin: 0 15px;
   }
 }
 
-.chapter,
-.character,
-.section {
-  width: 100%;
-  background-color: #f5f2a9; 
-  border: 3px solid #191970; 
-  padding: 20px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.item-card {
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px;
+.chapter {
+  width: 90%;
+  margin: 0 auto;
   background-color: #f5f2a9;
   border: 3px solid #191970;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.odyssey-characters {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #bed9f5;
+  border: 3px solid #191970;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f2a9;
+  border: 3px solid #191970;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #bed9f5;
+  border: 3px solid #191970;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f2a9;
+  border: 3px solid #191970;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-card img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
   object-fit: contain;
 }
