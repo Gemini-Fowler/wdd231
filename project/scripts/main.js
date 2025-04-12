@@ -3,11 +3,10 @@ import { renderItems } from './ui.js';
 
 async function init() {
   const items = await fetchItems();
-
   renderItems(items);
 
   const viewed = JSON.parse(localStorage.getItem('viewedItems') || '[]');
-
+  
   const container = document.getElementById('itemsContainer');
   const modal = document.getElementById('itemModal');
   const modalContent = document.getElementById('modalContent');

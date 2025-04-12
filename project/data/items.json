@@ -97,9 +97,9 @@
     },
     {
       "id": 13,
-      "title": "Phaeacian Court",
+      "title": "Phaeacian Games",
       "description": "Odysseus competes in athletic games held by the Phaeacians.",
-      "details": "After winning, he is moved to tears by a bard’s song of the Trojan War.",
+      "details": "After winning, he is moved to tears by a bard’s song recounting the Trojan War.",
       "image": "images/phaeacian-games.jpg",
       "link": "https://en.wikipedia.org/wiki/Phaeacia#Games"
     },
@@ -107,7 +107,7 @@
       "id": 14,
       "title": "Disguise in Ithaca",
       "description": "Back in Ithaca, Odysseus disguises himself as a beggar.",
-      "details": "Athena transforms him; he assesses the suitors and plans his revenge.",
+      "details": "Transformed by Athena, he assesses the suitors and plans his revenge.",
       "image": "images/disguise.png",
       "link": "https://en.wikipedia.org/wiki/The_Odyssey#Return_to_Ithaca"
     },
@@ -115,7 +115,7 @@
       "id": 15,
       "title": "Final Vengeance and Reunion",
       "description": "Odysseus reveals himself, slaughters the suitors, and reunites with Penelope.",
-      "details": "Peace is restored through Athena’s intervention.",
+      "details": "Order is restored with the help of Athena's intervention.",
       "image": "images/reunion.png",
       "link": "https://en.wikipedia.org/wiki/The_Odyssey#Slaying_of_the_suitors"
     }
